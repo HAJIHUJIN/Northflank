@@ -1,9 +1,12 @@
 #!/bin/sh
 
-# 1. 后台启动 Sing-box
+# 鍚姩 Sing-box 鍚庡彴杩涚▼
 /usr/local/bin/sing-box run -c /etc/sing-box/config.json &
 
-# 2. 启动 Cloudflare Tunnel
+# 绋嶅井绛夊緟 1 绉掕 sing-box 鍚姩瀹屾垚
+sleep 1
+
+# 鍚姩 Cloudflare Tunnel
 TOKEN="eyJhIjoiN2FhOWNmYTFkMDViOGYwMjY4NzYwNzRkNzBkNjI3MTgiLCJ0IjoiM2Q5Yjk4MTgtMWNlYS00YTgwLWI5MDYtMjIwMzkxMjg2ZjFjIiwicyI6Ik5tRmlaV1l3TW1RdFpUZGxPUzAwT0RGaExUazFaRGt0TkRrd01Ua3lOelZpWVRFMiJ9"
 
 echo "Starting Cloudflare Tunnel..."
