@@ -1,6 +1,6 @@
 {
   "log": {
-    "level": "info",
+    "level": "warn",
     "timestamp": true
   },
   "inbounds": [
@@ -17,7 +17,7 @@
       ],
       "transport": {
         "type": "ws",
-        "path": "/argo",
+        "path": "/api/v1/stream",
         "max_early_data": 2048,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       }
